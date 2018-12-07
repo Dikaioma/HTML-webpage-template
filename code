@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Basic HTML Template</title>
+		<link id="favicon" rel="icon" href="https://cdn.glitch.com/1f5f948f-6583-47f8-ba87-6f401dc2c13e%2FMy%20Logo.png?1542682158470" type="image/x-icon">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Put your description of your webpage here">
+		<meta name="author" content="Put the name of the author of your site (you) here">
+		<meta name="keywords" content="Include keywords here to make it easier to find your webpage, separate your keywords with a comma">
+		
+		<!--(links to Bootstrap, Google Fonts, external CSS files)-->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		
+		<!--(links to external JS files)-->
+		<script src="template.js"></script>
+	</body>
+</html>
