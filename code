@@ -11,6 +11,12 @@
 		<meta name="author" content="Put the name of the author of your site (you) here">
 		<meta name="keywords" content="Include keywords here to make it easier to find your webpage, separate your keywords with a comma">
 		
+		<!--[if IE 5]>This is IE 5<br><![endif]-->
+		<!--[if IE 6]>This is IE 6<br><![endif]-->
+		<!--[if IE 7]>This is IE 7<br><![endif]-->
+		<!--[if IE 8]>This is IE 8<br><![endif]-->
+		<!--[if IE 9]>This is IE 9<br><![endif]-->
+		
 		<!--(links to Bootstrap, Google Fonts, external CSS files)-->
 		<link rel="stylesheet" href="styles.css">
 	</head>
