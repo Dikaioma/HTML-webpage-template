@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" itemscope itemtype="https://schema.org/Article">
 	<head>
-		<!-- The first two meta tags must go before any other tags -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!--
@@ -15,14 +14,55 @@
 		
 		<base href="https://example.com/">
 		
+		<!-- Pinterest lets you prevent people from saving things from your website, according to their help center. The description is optional. -->
+		<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
+		
+		<!-- Facebook Open Graph -->
+		<meta property="fb:app_id" content="123456789">
+		<meta property="og:url" content="https://example.com/page.html">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Content Title">
+		<meta property="og:image" content="https://example.com/image.jpg">
+		<meta property="og:description" content="Description Here">
+		<meta property="og:site_name" content="Site Name">
+		<meta property="og:locale" content="en_US">
+		<meta property="article:author" content="">
+		
+		<!-- Facebook Instant Articles -->
+		<meta charset="utf-8">
+		<meta property="op:markup_version" content="v1.0">
+		<!-- The URL of the web version of your article -->
+		<link rel="canonical" href="https://example.com/article.html">
+		<!-- The style to be used for this article -->
+		<meta property="fb:article_style" content="myarticlestyle">
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@site_account">
+		<meta name="twitter:creator" content="@individual_account">
+		<meta name="twitter:url" content="https://example.com/page.html">
+		<meta name="twitter:title" content="Content Title">
+		<meta name="twitter:description" content="Content description less than 200 characters">
+		<meta name="twitter:image" content="https://example.com/image.jpg">
+		<!-- disallow Twitter from using your site's info for personalization purposes -->
+		<meta name="twitter:dnt" content="on">
+		
+		<!-- OEmbed -->
+		<link rel="alternate" type="application/json+oembed"
+			href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
+			title="oEmbed Profile: JSON">
+		<link rel="alternate" type="text/xml+oembed"
+			href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
+			title="oEmbed Profile: XML">
+		
 		<!-- For IE 10 and below -->
 		<!-- Place favicon.ico in the root directory - no tag necessary -->
 		<!-- Icon in the highest resolution we need it for -->
-		<link id="favicon" rel="icon" sizes="192x192" href="/path/to/icon.png" type="image/x-icon">
+		<link class="favicon" rel="icon" sizes="192x192" href="/path/to/icon.png" type="image/x-icon">
 		<!-- Apple Touch Icon (reuse 192px icon.png) -->
-		<link id="favicon" rel="apple-touch-icon" href="/path/to/apple-touch-icon.png" type="image/x-icon">
+		<link class="favicon" rel="apple-touch-icon" href="/path/to/apple-touch-icon.png" type="image/x-icon">
 		<!-- Safari Pinned Tab Icon -->
-		<link id="favicon" rel="mask-icon" href="/path/to/icon.svg" color="blue" type="image/x-icon">
+		<link class="favicon" rel="mask-icon" href="/path/to/icon.svg" color="blue" type="image/x-icon">
 		
 		<!-- Name of web application (only should be used if the website is used as an app) -->
 		<meta name="application-name" content="Application Name">
@@ -35,8 +75,8 @@
 		<meta name="subject" content="your document's subject">
 		<meta name="author" content="Put the name of the author of your site (you) here">
 		<meta name="keywords" content="Include keywords here to make it easier to find your webpage, separate your keywords with a comma">
-	      	<link rel="author" href="">
-	      	<link rel="publisher" href="">
+	      	<link rel="author" href="#">
+	      	<link rel="publisher" href="#">
 		<!-- Note that these 3 meta tags require the itemscope & itemtype attributes to be added to the <html> tag -->
 		<meta itemprop="name" content="Content Title">
 	      	<meta itemprop="description" content="Content description less than 200 characters">
@@ -148,47 +188,6 @@
 		<link rel="prefetch" href="https://www.example.com/">
 		<link rel="prerender" href="https://example.com/">
 		<link rel="preload" href="image.png" as="image">
-		
-		<!-- Facebook Open Graph -->
-		<meta property="fb:app_id" content="123456789">
-		<meta property="og:url" content="https://example.com/page.html">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Content Title">
-		<meta property="og:image" content="https://example.com/image.jpg">
-		<meta property="og:description" content="Description Here">
-		<meta property="og:site_name" content="Site Name">
-		<meta property="og:locale" content="en_US">
-		<meta property="article:author" content="">
-		
-		<!-- Facebook Instant Articles -->
-		<meta charset="utf-8">
-		<meta property="op:markup_version" content="v1.0">
-		<!-- The URL of the web version of your article -->
-		<link rel="canonical" href="https://example.com/article.html">
-		<!-- The style to be used for this article -->
-		<meta property="fb:article_style" content="myarticlestyle">
-		
-		<!-- Twitter Card -->
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@site_account">
-		<meta name="twitter:creator" content="@individual_account">
-		<meta name="twitter:url" content="https://example.com/page.html">
-		<meta name="twitter:title" content="Content Title">
-		<meta name="twitter:description" content="Content description less than 200 characters">
-		<meta name="twitter:image" content="https://example.com/image.jpg">
-		<!-- disallow Twitter from using your site's info for personalization purposes -->
-		<meta name="twitter:dnt" content="on">
-		
-		<!-- Pinterest lets you prevent people from saving things from your website, according to their help center. The description is optional. -->
-		<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
-		
-		<!-- OEmbed -->
-		<link rel="alternate" type="application/json+oembed"
-			href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
-			title="oEmbed Profile: JSON">
-		<link rel="alternate" type="text/xml+oembed"
-			href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
-			title="oEmbed Profile: XML">
 		
 		<!-- Browsers/Platforms -->
 	<!-- Apple iOS -->
