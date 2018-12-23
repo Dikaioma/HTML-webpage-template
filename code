@@ -1,28 +1,93 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
+		<!-- The first two meta tags must go before any other tags -->
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--
+		  Allows control over where resources are loaded from.
+		  Place as early in the <head> as possible, as the tag  
+		  only applies to resources that are declared after it.
+		-->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 		<title>Basic HTML Template</title>
-		<link id="favicon" rel="icon" href="https://cdn.glitch.com/1f5f948f-6583-47f8-ba87-6f401dc2c13e%2FMy%20Logo.png?1542682158470" type="image/x-icon">
+		<base href="https://example.com/">
+		<link id="favicon" rel="icon" href="" type="image/x-icon">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="refresh" content="30">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Name of web application (only should be used if the website is used as an app) -->
+		<meta name="application-name" content="Application Name">
+		<!-- Theme Color for Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#4285f4">
 		<meta name="description" content="Put your description of your webpage here">
+		<!-- Short description of your document's subject -->
+		<meta name="subject" content="your document's subject">
 		<meta name="author" content="Put the name of the author of your site (you) here">
 		<meta name="keywords" content="Include keywords here to make it easier to find your webpage, separate your keywords with a comma">
+		<!-- Control the behavior of search engine crawling and indexing -->
+		<meta name="robots" content="index,follow"><!-- All Search Engines -->
+		<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+		<!-- Tells Google not to show the sitelinks search box -->
+		<meta name="google" content="nositelinkssearchbox">
+		<!-- Tells Google not to provide a translation for this document -->
+		<meta name="google" content="notranslate">
+		<!-- Verify website ownership -->
+		<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
+		<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
+		<meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
+		<meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
+		<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
+		<meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
+		<!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
+		<meta name="generator" content="program">
+		<!-- Gives a general age rating based on the document's content -->
+		<meta name="rating" content="General">
+
+		<!-- Allows control over how referrer information is passed -->
+		<meta name="referrer" content="no-referrer">
+
+		<!-- Disable automatic detection and formatting of possible phone numbers -->
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- Completely opt out of DNS prefetching by setting to "off" -->
+		<meta http-equiv="x-dns-prefetch-control" content="off">
+
+		<!-- Stores a cookie on the client web browser for identification purposes -->
+		<meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
+
+		<!-- Specifies the document to appear in a specific frame -->
+		<meta http-equiv="Window-Target" content="_value">
+
+		<!-- Geo tags -->
+		<meta name="ICBM" content="latitude, longitude">
+		<meta name="geo.position" content="latitude;longitude">
+		<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+		<meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
 		
-		<!--[if IE 5]>This is IE 5<br><![endif]-->
-		<!--[if IE 6]>This is IE 6<br><![endif]-->
-		<!--[if IE 7]>This is IE 7<br><![endif]-->
-		<!--[if IE 8]>This is IE 8<br><![endif]-->
-		<!--[if IE 9]>This is IE 9<br><![endif]-->
+		<!--[if IE 5]>Stuff><![endif]-->
+		<!--[if IE 6]>Stuff<br><![endif]-->
+		<!--[if IE 7]>Stuff<br><![endif]-->
+		<!--[if IE 8]>Stuff<br><![endif]-->
+		<!--[if IE 9]>Stuff<br><![endif]-->
 		
 		<!--(links to Bootstrap, Google Fonts, external CSS files)-->
 		<link rel="stylesheet" href="styles.css">
+		<!-- Used for adding in-document CSS -->
+		<style>
+			/* ... */
+		</style>
+		
+		<!-- JavaScript & No-JavaScript tags -->
+		<script src="script.js"></script>
+		<script>
+		  	// function(s) go here
+		</script>
+		<noscript>
+		  	<!-- No JS alternative -->
+		</noscript>
 	</head>
 	<body>
 		
-		<!--(links to external JS files)-->
-		<script src="template.js"></script>
+		
 	</body>
 </html>
